@@ -1,4 +1,8 @@
 <h1>Gsw#index</h1>
   <dl>
-    <%= @profile %>
+    <% @players.collect do |player| %>
+    <% if player["team"]["Abbreviation"].eql? "GSW" %>
+    <li><%= player["player"] %></li>
+    <% end %>
+    <% end %>
  </dl>
