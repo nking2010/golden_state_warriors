@@ -1,8 +1,9 @@
-<h1>Gsw#index</h1>
+<h1>Golden State Warriors 2016-17 Roster</h1>
   <dl>
     <% @players.collect do |player| %>
     <% if player["team"]["Abbreviation"].eql? "GSW" %>
-    <li><%= player["player"] %></li>
+    <li><%= player["player"]["FirstName"]%> <%=player["player"]["LastName"]%>
+      # <%=player["player"]["JerseyNumber"]%></li>
     <% end %>
     <% end %>
  </dl>
