@@ -1,0 +1,31 @@
+
+
+<p>
+  type "localhost:3000/abr"
+  where abr is the three letter abbreviation for your team
+</p>
+
+<Table>
+  <Tr>
+    <Th>
+      Team
+    </Th>
+    <Th>
+      Abbreviation
+    </Th>
+  </Tr>
+  <% @teams.collect do |team| %>
+  <tr>
+    <td>
+        <%= team["team"]["Name"]%>
+    </td>
+    <td>
+      <%=team["team"]["Abbreviation"]%>
+    </td>
+  </tr>
+  <%end%>
+</Table>
+
+<p>
+  lets try it!
+</p>
