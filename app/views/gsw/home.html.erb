@@ -1,10 +1,5 @@
 
-
-<p>
-  type "localhost:3000/abr"
-  where abr is the three letter abbreviation for your team
-</p>
-
+<div class="content">
 <Table>
   <Tr>
     <Th>
@@ -17,15 +12,12 @@
   <% @teams.collect do |team| %>
   <tr>
     <td>
-        <%= link_to team["team"]["Name"]%>
+        <%= link_to team["team"]["Name"], (request.base_url + '/' + team["team"]["Abbreviation"])%>
     </td>
     <td>
-      <%= link_to team["team"]["Abbreviation"]%>
+      <%= link_to team["team"]["Abbreviation"],(request.base_url + '/' + team["team"]["Abbreviation"]) %>
     </td>
   </tr>
   <%end%>
 </Table>
-
-<p>
-  lets try it!
-</p>
+</div>

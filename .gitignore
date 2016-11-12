@@ -1,2 +1,4 @@
-/log
-/tmp
+*.tmp
+tmp/*
+/tmp/*
+*/tmp/*
