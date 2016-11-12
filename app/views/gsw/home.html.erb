@@ -17,10 +17,10 @@
   <% @teams.collect do |team| %>
   <tr>
     <td>
-        <%= team["team"]["Name"]%>
+        <%= link_to team["team"]["Name"]%>
     </td>
     <td>
-      <%=team["team"]["Abbreviation"]%>
+      <%= link_to team["team"]["Abbreviation"]%>
     </td>
   </tr>
   <%end%>
