@@ -1,0 +1,27 @@
+
+*{
+  color: red;
+  font-family: cursive;
+  position: relative;
+  font-size: 14px;
+  }
+body{
+  background-color: black;
+}
+.content{
+  background-image: url('http://wallpapercave.com/wp/ipQZEak.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1, dl{
+  text-align: center;
+}
+.picture{
+  max-width: 300px;
+  max-height: 500px;
+}
+
+/*body {
+   background-image: url("http://wallpapercave.com/wp/ipQZEak.jpg");
+   background-repeat: no-repeat;
+ }*/

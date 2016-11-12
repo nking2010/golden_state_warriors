@@ -1,3 +1,20 @@
 // Place all the styles related to the GSW controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+*{
+  color: red;
+  font-family: cursive;
+  position: relative;
+  font-size: 26px;
+}
+.image-size{
+  max-width: 300px;
+  max-height: 200px;
+}
+// .style-image {
+//   background-image: ("basketball_court.jpg");
+//   background-repeat: no-repeat;
+// // }
+// .background-style{
+//   background-image: (../images/basketball_court.jpg);
+// }
