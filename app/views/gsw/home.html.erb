@@ -1,23 +1,14 @@
-
+  <h1>Teams</h1>
 <div class="content">
+<div class="teams">
 <Table>
-  <Tr>
-    <Th>
-      Team
-    </Th>
-    <Th>
-      Abbreviation
-    </Th>
-  </Tr>
+  <ul>
   <% @teams.collect do |team| %>
-  <tr>
-    <td>
+    <li class="stuff">
         <%= link_to team["team"]["Name"], (request.base_url + '/' + team["team"]["Abbreviation"])%>
-    </td>
-    <td>
-      <%= link_to team["team"]["Abbreviation"],(request.base_url + '/' + team["team"]["Abbreviation"]) %>
-    </td>
-  </tr>
+    </li>
   <%end%>
+</ul>
 </Table>
+</div>
 </div>

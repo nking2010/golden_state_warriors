@@ -21,4 +21,7 @@ class GswController < ApplicationController
     request.base_url
   end
 
+  def homepg
+  end
+
 end

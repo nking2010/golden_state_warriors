@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get '/' => 'gsw#home'
+  # get '/' => 'gsw#home'
   get '/:id' => 'gsw#index'
+  get "/" => 'gsw#homepg'
   # get '/:id' =>'gsw#show'
   # get 'gsw/index'
   # root 'gsw#index'
