@@ -1,0 +1,9 @@
+<h1>Chi#index</h1>
+<link rel="stylesheet" type="text/css" href="style.css">
+  <dl>
+    <% @players.collect do |player| %>
+    <% if player["team"]["Abbreviation"].eql? "CHI" %>
+    <li><%= player["player"] %></li>
+    <% end %>
+    <% end %>
+ </dl>
