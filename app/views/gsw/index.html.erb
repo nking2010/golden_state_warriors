@@ -1,22 +1,9 @@
-<<<<<<< HEAD
 <link rel="stylesheet" type="text/css" href="style.css">
-<div class="content">
-  <h1>Golden State Warriors 2016-17 Roster</h1>
-    <dl>
-      <% @players.collect do |player| %>
-      <% if player["team"]["Abbreviation"].eql? "GSW" %>
-      <li><%= player["player"]["FirstName"]%> <%=player["player"]["LastName"]%>
-        # <%=player["player"]["JerseyNumber"]%></li>
-      <% end %>
-      <% end %>
-    </dl>
-</div>
-=======
   <h1><%= params[:id]  %></h1>
-
-  <Table>
-    <Tr>
-    <Th>
+<div class="content">
+  <table>
+    <tr>
+    <th>
     Player
     </Th>
     <Th>
@@ -37,4 +24,4 @@
     <% end %>
     <% end %>
  </Table>
->>>>>>> 528be8e16c72103a22b3d37e24a4dd2eff44a878
+ </div>
