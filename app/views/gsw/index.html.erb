@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="style.css">
-  <h1><%= link_to params[:id], request.base_url  %></h1>
+  <h1><%= link_to params[:id], "/home"  %></h1>
 <div class="content">
   <table>
     <tr>
@@ -14,8 +14,8 @@
     <% if player["team"]["Abbreviation"].eql? params[:id] %>
       <Tr>
         <td>
-          <%= player["player"]["FirstName"]%>
-          <%=player["player"]["LastName"]%>
+          <%= link_to player["player"]["FirstName"], ('https://en.wikipedia.org/wiki/' + player["player"]["FirstName"] + "_" +  player["player"]["LastName"])%>
+          <%= link_to player["player"]["LastName"], ('https://en.wikipedia.org/wiki/' + player["player"]["FirstName"] + "_" +  player["player"]["LastName"]) %>
         </td>
         <td>
 
