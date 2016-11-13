@@ -209,3 +209,9 @@ p {
     background-color: rgba(0,0,0,0.9);
 	}
 }
+#homebanner{
+  font-size: 30px;
+}
+#realtime{
+  font-size: 18px;
+}
