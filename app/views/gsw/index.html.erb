@@ -14,8 +14,8 @@
     <% if player["team"]["Abbreviation"].eql? params[:id] %>
       <Tr>
         <td>
-          <%= link_to player["player"]["FirstName"], ('https://en.wikipedia.org/wiki/' + player["player"]["FirstName"] + "_" +  player["player"]["LastName"])%>
-          <%= link_to player["player"]["LastName"], ('https://en.wikipedia.org/wiki/' + player["player"]["FirstName"] + "_" +  player["player"]["LastName"]) %>
+          <%= link_to "#{player['player']['FirstName']} #{player['player']['LastName']}", ('https://en.wikipedia.org/wiki/' + player["player"]["FirstName"] + "_" +  player["player"]["LastName"])%>
+
         </td>
         <td>
 
