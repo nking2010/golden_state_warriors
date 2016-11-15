@@ -1,5 +1,10 @@
 <link rel="stylesheet" type="text/css" href="style.css">
-  <h1><%= link_to params[:id], "/home"  %></h1>
+<% @players.collect do |player| %>
+<% if player["team"]["Abbreviation"].eql? params[:id] %>
+<h1><%= link_to player["team"]["Name"], "/home"  %></h1>
+    <% break %>
+  <% end %>
+  <% end %>
 <div class="content">
   <table>
     <tr>
@@ -9,7 +14,7 @@
     <Th>
     Number
     </Th>
-    </Tr>
+  </Tr>
     <% @players.collect do |player| %>
     <% if player["team"]["Abbreviation"].eql? params[:id] %>
       <Tr>
