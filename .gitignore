@@ -4,4 +4,4 @@ tmp/*
 */tmp/*
 *.log
 log/
-*.bundle/*
+*.bundle/config*
