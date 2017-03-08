@@ -2,227 +2,227 @@
 @import "bootstrap";
 
 
-*{
-  color: white;
-  font-family: 'Playfair Display', serif;
-  position: relative;
-  font-size: 22px;
-  }
-
-a{
-  text-decoration: none;
-}
-
-body{
-  background-color: black;
-}
-.content{
-  background-image: url('http://wallpapercave.com/wp/ipQZEak.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.teams{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-table, th, td{
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom: .1px solid white;
-}
-h1, dl{
-  text-align: center;
-}
-.picture{
-  max-width: 300px;
-  max-height: 700px;
-
-}
-
-body {
-  background: black;
-}
-ul {
-  columns: 2;
-}
-
-/* CSS FOR HOMEPAGE BASKETBALL */
-#homebanner{
-  font-size: 30px;
-}
-#realtime{
-  font-size: 18px;
-}
-
-body#homepg {background-color: grey; width: 100%; height: 50%; margin: 0; padding: 0;}
-
-#box {
-  position: fixed;
-	width: 200px;
-	height: 300px;
-  right: 0;
-  bottom: 0;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-#ball {
-	z-index: 3;
-	width: 100px;
-	height: 100px;
-	position: absolute;
-	top: 0px;
-	left: 50%;
-	margin-left: -50px;
-	-webkit-border-radius: 55px;
-	-moz-border-radius: 55px;
-	border-radius: 55px;
-
-	-webkit-animation: bounce 3.95s forwards infinite;
-	-moz-animation: bounce 3.95s forwards infinite;
-	-ms-animation: bounce 3.95s forwards infinite;
-	animation: bounce 3.95s forwards infinite;
-}
-#shadow {
-	position: absolute;
-	height: 5px;
-	width: 100px;
-  background-color: rgba(0,0,0,1);
-	bottom: 10px;
-	left: 50%;
-
-	-webkit-animation: shadow 3.85s forwards infinite;
-	-moz-animation: shadow 3.85s forwards infinite;
-	-ms-animation: shadow 3.85s forwards infinite;
-	animation: shadow 3.85s forwards infinite;
-}
-p {
-  position: absolute;
-  text-align: center;
-  font-family: sans-serif;
-  width: 100%;
-  margin-left: 10px;
-  letter-spacing: 3px;
-  bottom: -20px;
-  font-weight: bolder;
-  text-transform: uppercase;
-  font-size: 8px;
-}
-@keyframes bounce {
-	0% {
-		top: 0;
-		animation-timing-function: ease-in;
-	}
-	16% {
-		top: 190px;
-		animation-timing-function: ease-out;
-	}
-	32% {
-		top: 50px;
-		animation-timing-function: ease-in;
-	}
-	48% {
-		top: 190px;
-		animation-timing-function: ease-out;
-	}
-	62% {
-		top: 60px;
-		animation-timing-function: ease-in;
-	}
-	78% {
-		top: 190px;
-		animation-timing-function: ease-out;
-	}
-	85% {
-		top: 50px;
-		animation-timing-function: ease-in;
-	}
-  90% {
-		top: 190px;
-		animation-timing-function: ease-out;
-	}
-	100% {
-		top: 0;
-		animation-timing-function: ease-in;
-	}
-}
-
-
-@keyframes shadow {
-	0% {
-		width: 10px;
-		border-radius:10px/5px;
-		margin-left: -5px;
-		-webkit-animation-timing-function: ease-in;
-    background-color: rgba(0,0,0,0.2);
-	}
-	16% {
-		width: 100px;
-		-webkit-border-radius:100px/5px;
-		margin-left: -50px;
-		-webkit-animation-timing-function: ease-out;
-    background-color: rgba(0,0,0,0.9);
-	}
-	32% {
-		width: 30px;
-		-webkit-border-radius: 30px/5px;
-		margin-left: -15px;
-		-webkit-animation-timing-function: ease-in;
-    background-color: rgba(0,0,0,.7);
-	}
-	48% {
-		width: 100px;
-		-webkit-border-radius:100px/5px;
-		margin-left: -50px;
-		-webkit-animation-timing-function: ease-out;
-    background-color: rgba(0,0,0,.9);
-	}
-	62% {
-		width: 58px;
-		-webkit-border-radius:58px/5px;
-		margin-left: -29px;
-		-webkit-animation-timing-function: ease-in;
-    background-color: rgba(0,0,0,0.7);
-	}
-	78% {
-		width: 100px;
-		-webkit-border-radius:100px/5px;
-		margin-left: -50px;
-		-webkit-animation-timing-function: ease-all;
-    background-color: rgba(0,0,0,0.9);
-	}
-	85% {
-		width: 58px;
-		-webkit-border-radius:58px/5px;
-		margin-left: -29px;
-		-webkit-animation-timing-function: ease-all;
-    background-color: rgba(0,0,0,0.85);
-	}
-  90% {
-		width: 100px;
-		-webkit-border-radius:100px/5px;
-		margin-left: -50px;
-		-webkit-animation-timing-function: ease-out;
-    background-color: rgba(0,0,0,0.85);
-	}
-	100% {
-		width: 10px;
-		-webkit-border-radius:10px/5px;
-		margin-left: -5px;
-		-webkit-animation-timing-function: ease-in;
-    background-color: rgba(0,0,0,0.9);
-	}
-}
-#homebanner{
-  font-size: 30px;
-}
-#realtime{
-  font-size: 18px;
-}
+// *{
+//   color: white;
+//   font-family: 'Playfair Display', serif;
+//   position: relative;
+//   font-size: 22px;
+//   }
+//
+// a{
+//   text-decoration: none;
+// }
+//
+// body{
+//   background-color: black;
+// }
+// .content{
+//   background-image: url('http://wallpapercave.com/wp/ipQZEak.jpg');
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   display: flex;
+//   justify-content: center;
+//   align-content: center;
+// }
+//
+// .teams{
+//   display: flex;
+//   justify-content: center;
+//   align-content: center;
+// }
+//
+// // table, th, td{
+// //   width: auto;
+// //   margin-left: auto;
+// //   margin-right: auto;
+// //   border-bottom: .1px solid white;
+// // }
+// h1, dl{
+//   text-align: center;
+// }
+// .picture{
+//   max-width: 300px;
+//   max-height: 700px;
+//
+// }
+//
+// body {
+//   background: black;
+// }
+// ul {
+//   columns: 2;
+// }
+//
+// /* CSS FOR HOMEPAGE BASKETBALL */
+// #homebanner{
+//   font-size: 30px;
+// }
+// #realtime{
+//   font-size: 18px;
+// }
+//
+// body#homepg {background-color: grey; width: 100%; height: 50%; margin: 0; padding: 0;}
+//
+// #box {
+//   position: fixed;
+// 	width: 200px;
+// 	height: 300px;
+//   right: 0;
+//   bottom: 0;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+// #ball {
+// 	z-index: 3;
+// 	width: 100px;
+// 	height: 100px;
+// 	position: absolute;
+// 	top: 0px;
+// 	left: 50%;
+// 	margin-left: -50px;
+// 	-webkit-border-radius: 55px;
+// 	-moz-border-radius: 55px;
+// 	border-radius: 55px;
+//
+// 	-webkit-animation: bounce 3.95s forwards infinite;
+// 	-moz-animation: bounce 3.95s forwards infinite;
+// 	-ms-animation: bounce 3.95s forwards infinite;
+// 	animation: bounce 3.95s forwards infinite;
+// }
+// #shadow {
+// 	position: absolute;
+// 	height: 5px;
+// 	width: 100px;
+//   background-color: rgba(0,0,0,1);
+// 	bottom: 10px;
+// 	left: 50%;
+//
+// 	-webkit-animation: shadow 3.85s forwards infinite;
+// 	-moz-animation: shadow 3.85s forwards infinite;
+// 	-ms-animation: shadow 3.85s forwards infinite;
+// 	animation: shadow 3.85s forwards infinite;
+// }
+// p {
+//   position: absolute;
+//   text-align: center;
+//   font-family: sans-serif;
+//   width: 100%;
+//   margin-left: 10px;
+//   letter-spacing: 3px;
+//   bottom: -20px;
+//   font-weight: bolder;
+//   text-transform: uppercase;
+//   font-size: 8px;
+// }
+// @keyframes bounce {
+// 	0% {
+// 		top: 0;
+// 		animation-timing-function: ease-in;
+// 	}
+// 	16% {
+// 		top: 190px;
+// 		animation-timing-function: ease-out;
+// 	}
+// 	32% {
+// 		top: 50px;
+// 		animation-timing-function: ease-in;
+// 	}
+// 	48% {
+// 		top: 190px;
+// 		animation-timing-function: ease-out;
+// 	}
+// 	62% {
+// 		top: 60px;
+// 		animation-timing-function: ease-in;
+// 	}
+// 	78% {
+// 		top: 190px;
+// 		animation-timing-function: ease-out;
+// 	}
+// 	85% {
+// 		top: 50px;
+// 		animation-timing-function: ease-in;
+// 	}
+//   90% {
+// 		top: 190px;
+// 		animation-timing-function: ease-out;
+// 	}
+// 	100% {
+// 		top: 0;
+// 		animation-timing-function: ease-in;
+// 	}
+// }
+//
+//
+// @keyframes shadow {
+// 	0% {
+// 		width: 10px;
+// 		border-radius:10px/5px;
+// 		margin-left: -5px;
+// 		-webkit-animation-timing-function: ease-in;
+//     background-color: rgba(0,0,0,0.2);
+// 	}
+// 	16% {
+// 		width: 100px;
+// 		-webkit-border-radius:100px/5px;
+// 		margin-left: -50px;
+// 		-webkit-animation-timing-function: ease-out;
+//     background-color: rgba(0,0,0,0.9);
+// 	}
+// 	32% {
+// 		width: 30px;
+// 		-webkit-border-radius: 30px/5px;
+// 		margin-left: -15px;
+// 		-webkit-animation-timing-function: ease-in;
+//     background-color: rgba(0,0,0,.7);
+// 	}
+// 	48% {
+// 		width: 100px;
+// 		-webkit-border-radius:100px/5px;
+// 		margin-left: -50px;
+// 		-webkit-animation-timing-function: ease-out;
+//     background-color: rgba(0,0,0,.9);
+// 	}
+// 	62% {
+// 		width: 58px;
+// 		-webkit-border-radius:58px/5px;
+// 		margin-left: -29px;
+// 		-webkit-animation-timing-function: ease-in;
+//     background-color: rgba(0,0,0,0.7);
+// 	}
+// 	78% {
+// 		width: 100px;
+// 		-webkit-border-radius:100px/5px;
+// 		margin-left: -50px;
+// 		-webkit-animation-timing-function: ease-all;
+//     background-color: rgba(0,0,0,0.9);
+// 	}
+// 	85% {
+// 		width: 58px;
+// 		-webkit-border-radius:58px/5px;
+// 		margin-left: -29px;
+// 		-webkit-animation-timing-function: ease-all;
+//     background-color: rgba(0,0,0,0.85);
+// 	}
+//   90% {
+// 		width: 100px;
+// 		-webkit-border-radius:100px/5px;
+// 		margin-left: -50px;
+// 		-webkit-animation-timing-function: ease-out;
+//     background-color: rgba(0,0,0,0.85);
+// 	}
+// 	100% {
+// 		width: 10px;
+// 		-webkit-border-radius:10px/5px;
+// 		margin-left: -5px;
+// 		-webkit-animation-timing-function: ease-in;
+//     background-color: rgba(0,0,0,0.9);
+// 	}
+// }
+// #homebanner{
+//   font-size: 30px;
+// }
+// #realtime{
+//   font-size: 18px;
+// }

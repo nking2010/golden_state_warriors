@@ -1,14 +1,18 @@
-  <h1>Teams</h1>
+
 <div class="content">
 <div class="teams">
-<Table>
-  <ul>
-  <% @teams.collect do |team| %>
-    <li class="stuff">
-        <%= link_to team["team"]["Name"], (request.base_url + '/' + team["team"]["Abbreviation"])%>
-    </li>
+<table class="table">
+  <caption>Teams</caption>
+
+  <% @teams.in_groups_of(2) do |team_array| %>
+  <tr>
+
+      <% team_array.each do |team| %>
+        <td><%= link_to team["team"]["Name"], (request.base_url + '/' + team["team"]["Abbreviation"])%></td>
+        <% end%>
+  </tr>
   <%end%>
-</ul>
-</Table>
+  
+</table>
 </div>
 </div>

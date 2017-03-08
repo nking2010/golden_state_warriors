@@ -27,13 +27,13 @@ body{
   justify-content: center;
   align-content: center;
 }
-
+/*
 table, th, td{
   width: auto;
   margin-left: auto;
   margin-right: auto;
   border-bottom: .1px solid white;
-}
+}*/
 h1, dl{
   text-align: center;
 }
